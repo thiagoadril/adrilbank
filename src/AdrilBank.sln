@@ -13,17 +13,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.Infra.CrossCuttin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.Application", "AdrilBank.Application\AdrilBank.Application.csproj", "{FB916ABC-3D8E-4D40-BFF5-B04849B3205B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Api", "0 - Api", "{D93FFBD1-CF05-4FB6-B391-F61D66ECFFBF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{D93FFBD1-CF05-4FB6-B391-F61D66ECFFBF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{B56018C8-BFAB-40CF-B6D5-8C8299744844}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{B56018C8-BFAB-40CF-B6D5-8C8299744844}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{5F1F4814-0CCA-4FDE-BAD3-B5BDCC641CB3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{5F1F4814-0CCA-4FDE-BAD3-B5BDCC641CB3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{C9804106-4924-4E00-AD0D-9351AD250895}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{C9804106-4924-4E00-AD0D-9351AD250895}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 -Tests", "4 -Tests", "{016AA2CF-4905-4062-A33C-D691BEE217CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 -Tests", "5 -Tests", "{016AA2CF-4905-4062-A33C-D691BEE217CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.UnitTests", "AdrilBank.UnitTests\AdrilBank.UnitTests.csproj", "{B0FFD647-DC72-4377-8E15-40695F74A9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Resources", "0 - Resources", "{58CAFEA1-BAE5-4341-91CD-7E37AE50BEE2}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
