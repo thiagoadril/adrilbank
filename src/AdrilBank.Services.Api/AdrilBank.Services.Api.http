@@ -1,0 +1,6 @@
+@AdrilBank.Services.Api_HostAddress = http://localhost:5189
+
+GET {{AdrilBank.Services.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
