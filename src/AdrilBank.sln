@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{C9804106-4924-4E00-AD0D-9351AD250895}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 -Tests", "4 -Tests", "{016AA2CF-4905-4062-A33C-D691BEE217CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.UnitTests", "AdrilBank.UnitTests\AdrilBank.UnitTests.csproj", "{B0FFD647-DC72-4377-8E15-40695F74A9C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{FB916ABC-3D8E-4D40-BFF5-B04849B3205B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB916ABC-3D8E-4D40-BFF5-B04849B3205B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB916ABC-3D8E-4D40-BFF5-B04849B3205B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FFD647-DC72-4377-8E15-40695F74A9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FFD647-DC72-4377-8E15-40695F74A9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FFD647-DC72-4377-8E15-40695F74A9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FFD647-DC72-4377-8E15-40695F74A9C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +65,7 @@ Global
 		{9B213397-C539-40E5-948F-319185C5A840} = {C9804106-4924-4E00-AD0D-9351AD250895}
 		{0C2FEE83-9BAD-4050-9530-353940A69C46} = {C9804106-4924-4E00-AD0D-9351AD250895}
 		{FB916ABC-3D8E-4D40-BFF5-B04849B3205B} = {B56018C8-BFAB-40CF-B6D5-8C8299744844}
+		{B0FFD647-DC72-4377-8E15-40695F74A9C0} = {016AA2CF-4905-4062-A33C-D691BEE217CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5763BF75-D915-41DB-B774-D235420F6A23}
