@@ -13,8 +13,6 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["AdrilBank.Api/AdrilBank.Api.csproj", "AdrilBank.Api/"]
-COPY ["AdrilBank.Infra.Data/AdrilBank.Infra.Data.csproj", "AdrilBank.Infra.Data/"]
-COPY ["AdrilBank.Domain/AdrilBank.Domain.csproj", "AdrilBank.Domain/"]
 RUN dotnet restore "./AdrilBank.Api/AdrilBank.Api.csproj"
 COPY . .
 WORKDIR "/src/AdrilBank.Api"

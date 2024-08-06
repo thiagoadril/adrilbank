@@ -1,0 +1,25 @@
+name: adrilbank
+services:
+  adrilbank.api:
+    container_name: adrilbank-api
+    image: ${DOCKER_REGISTRY-}adrilbank-api
+    build:
+      context: ../../src/
+      dockerfile: AdrilBank.Api/Dockerfile
+
+  adrilbank-db:
+    container_name: adrilbank-db
+    hostname: mssql-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: '4dr1lB4nk'
+      MSSQL_DATA_DIR: /var/opt/mssql/data
+      MSSQL_PID: 'Developer' 
+      MSSQL_TCP_PORT: 1433 
+    ports: 
+      - "1433:1433"
+    volumes:
+      - ../data/mssql/data:/var/opt/mssql/data
+      - ../data/mssql/log:/var/opt/mssql/log
+      - ../data/mssql/secrets:/var/opt/mssql/secrets
