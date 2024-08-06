@@ -5,7 +5,7 @@ namespace AdrilBank.Domain.Base.Bus
 {
     public interface IMediatorHandler
     {
-        Task Send<T>(T Command) where T : Command;
-        Task Raise<T>(T @event) where T : Event;
+        Task SendAsync<T>(T command) where T : Command;
+        Task RaiseAsync<T>(T @event) where T : Event;
     }
 }

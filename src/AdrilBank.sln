@@ -5,13 +5,13 @@ VisualStudioVersion = 17.11.35118.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.Domain", "AdrilBank.Domain\AdrilBank.Domain.csproj", "{3E41A4F7-6127-45C9-A5B0-9C22B986FFBD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.Services.Api", "AdrilBank.Services.Api\AdrilBank.Services.Api.csproj", "{460A868B-21C3-480F-9410-F2C4AEDD0A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.Api", "AdrilBank.Api\AdrilBank.Api.csproj", "{460A868B-21C3-480F-9410-F2C4AEDD0A4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.Infra.Data", "AdrilBank.Infra.Data\AdrilBank.Infra.Data.csproj", "{9B213397-C539-40E5-948F-319185C5A840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.Infra.Data", "AdrilBank.Infra.Data\AdrilBank.Infra.Data.csproj", "{9B213397-C539-40E5-948F-319185C5A840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.Infra.CrossCutting", "AdrilBank.Infra.CrossCutting\AdrilBank.Infra.CrossCutting.csproj", "{0C2FEE83-9BAD-4050-9530-353940A69C46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.Infra.CrossCutting", "AdrilBank.Infra.CrossCutting\AdrilBank.Infra.CrossCutting.csproj", "{0C2FEE83-9BAD-4050-9530-353940A69C46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.Application", "AdrilBank.Application\AdrilBank.Application.csproj", "{FB916ABC-3D8E-4D40-BFF5-B04849B3205B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.Application", "AdrilBank.Application\AdrilBank.Application.csproj", "{FB916ABC-3D8E-4D40-BFF5-B04849B3205B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{D93FFBD1-CF05-4FB6-B391-F61D66ECFFBF}"
 EndProject
@@ -23,13 +23,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 -Tests", "5 -Tests", "{016AA2CF-4905-4062-A33C-D691BEE217CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdrilBank.UnitTests", "AdrilBank.UnitTests\AdrilBank.UnitTests.csproj", "{B0FFD647-DC72-4377-8E15-40695F74A9C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdrilBank.UnitTests", "AdrilBank.UnitTests\AdrilBank.UnitTests.csproj", "{B0FFD647-DC72-4377-8E15-40695F74A9C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Resources", "0 - Resources", "{58CAFEA1-BAE5-4341-91CD-7E37AE50BEE2}"
 	ProjectSection(SolutionItems) = preProject
 		.dockerignore = .dockerignore
 		.editorconfig = .editorconfig
 		..\.gitignore = ..\.gitignore
+		..\docker-compose.yaml = ..\docker-compose.yaml
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject

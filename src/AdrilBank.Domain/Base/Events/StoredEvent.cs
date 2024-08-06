@@ -10,7 +10,7 @@
         {
             Id = Guid.NewGuid();
             AggregateId = theEvent.AggregateId;
-            MessageType = theEvent.MessageType;
+            Action = theEvent.Action;
             Data = data;
             User = user;
         }

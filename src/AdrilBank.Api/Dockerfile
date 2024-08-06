@@ -12,19 +12,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["AdrilBank.Services.Api/AdrilBank.Services.Api.csproj", "AdrilBank.Services.Api/"]
-RUN dotnet restore "./AdrilBank.Services.Api/AdrilBank.Services.Api.csproj"
+COPY ["AdrilBank.Api/AdrilBank.Api.csproj", "AdrilBank.Api/"]
+RUN dotnet restore "./AdrilBank.Api/AdrilBank.Api.csproj"
 COPY . .
-WORKDIR "/src/AdrilBank.Services.Api"
-RUN dotnet build "./AdrilBank.Services.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/AdrilBank.Api"
+RUN dotnet build "./AdrilBank.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Esta fase é usada para publicar o projeto de serviço a ser copiado para a fase final
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./AdrilBank.Services.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./AdrilBank.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # Esta fase é usada na produção ou quando executada no VS no modo normal (padrão quando não está usando a configuração de Depuração)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "AdrilBank.Services.Api.dll"]
+ENTRYPOINT ["dotnet", "AdrilBank.Api.dll"]

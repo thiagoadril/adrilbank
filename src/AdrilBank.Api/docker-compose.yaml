@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  
+  api:
+    image: adrilbank/api
+    build:
+        context: .
+        dockerfile: src/AdrilBank.Api/Dockerfile
+    depends_on:
+        - mssql
+
+  mssql:
+    container_name: mssql-db
+    hostname: mssql-db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: '4dr1lB4nk'
+      MSSQL_DATA_DIR: /var/opt/mssql/data
+      MSSQL_PID: 'Developer' 
+      MSSQL_TCP_PORT: 1433 
+    ports: 
+      - "1433:1433"
+    volumes:
+      - ./mssql-data:/var/opt/mssql/data
+      - ./log:/var/opt/mssql/log
+      - ./secrets:/var/opt/mssql/secrets
